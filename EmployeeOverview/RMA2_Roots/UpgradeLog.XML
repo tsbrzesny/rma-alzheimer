@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="RMA2_Roots">
+</Property><Property Name="Solution File" Value="C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\RMA2_Roots.sln">
+</Property><Property Name="User Options File" Value="C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\RMA2_Roots.suo">
+</Property><Property Name="Date" Value="Mittwoch, 8. Juni 2011">
+</Property><Property Name="Time" Value="14:29">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="RMA2_Roots.sln" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots.sln">
+</Event><Event ErrorLevel="0" Project="" Source="RMA2_Roots.suo" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots.suo">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\RMA2_Roots.vbproj" Description="Project file successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\RMA2_Roots.vbproj">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\RMA2_Roots.vbproj.user" Description="Project user file successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\RMA2_Roots.vbproj.user">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\Interfaces.vb" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\Interfaces.vb">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\DataAccess.vb" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\DataAccess.vb">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\DBRoot.vb" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\DBRoot.vb">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\Objects.vb" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\Objects.vb">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\Services.vb" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\Services.vb">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\My Project\AssemblyInfo.vb" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\My Project\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\My Project\Application.Designer.vb" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\My Project\Resources.Designer.vb" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\My Project\Settings.Designer.vb" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\My Project\Settings.Designer.vb">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\My Project\Application.myapp" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\My Project\Settings.settings" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\My Project\Settings.settings">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\My Project\Resources.resx" Description="File successfully backed up as C:\Users\Benjamin Koch\Documents\Visual Studio 2010\Projects\RMA2_Roots\Backup\RMA2_Roots\My Project\Resources.resx">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\RMA2_Roots.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RMA2_Roots" Source="RMA2_Roots\RMA2_Roots.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="RMA2_Roots.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="RMA2_Roots.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RMA2_Roots" Source="RMA2_Roots\RMA2_Roots.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

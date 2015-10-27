@@ -120,7 +120,20 @@
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\RMA2_Roots\RMA2_Roots.vbproj">
+      <Project>{c6cbaffa-f0b6-4b4c-a971-1d28597bb917}</Project>
+      <Name>RMA2_Roots</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPF\RMA_Roots\RMA_Roots.csproj">
+      <Project>{2d0ec859-b418-4622-a41f-7c4b96e24e95}</Project>
+      <Name>RMA_Roots</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WPF\WPF_Roots\WPF_Roots.csproj">
+      <Project>{27deb0c6-655e-41a6-82c1-c4102560d714}</Project>
+      <Name>WPF_Roots</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
@@ -137,20 +150,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\RMA2_Roots\RMA2_Roots.vbproj">
-      <Project>{c6cbaffa-f0b6-4b4c-a971-1d28597bb917}</Project>
-      <Name>RMA2_Roots</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\WPF\RMA_Roots\RMA_Roots.csproj">
-      <Project>{2d0ec859-b418-4622-a41f-7c4b96e24e95}</Project>
-      <Name>RMA_Roots</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\WPF\WPF_Roots\WPF_Roots.csproj">
-      <Project>{27deb0c6-655e-41a6-82c1-c4102560d714}</Project>
-      <Name>WPF_Roots</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
