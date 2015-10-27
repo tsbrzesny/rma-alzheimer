@@ -1,74 +1,67 @@
-﻿using System.Collections;
+﻿using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using System.Windows.Media;
 using Alzheimer.ViewModel;
+
 
 namespace Alzheimer
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
-        
+        private Boolean _dragFlag;
+        private Point _point;
         public MainWindow()
         {
             InitializeComponent();
-
+            _dragFlag = false;
             RMA_Roots.AppConfig.LoadAppConfiguration("EmployeeOverview");
             DataContext = new EmployeeViewModel();
         }
 
+        //private ListBox dragSource = null;
 
-ListBox dragSource = null;
-private void ListBox_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        private void ListBox_OnMouseDown(object sender, MouseButtonEventArgs e)
         {
-            ListBox parent = (ListBox)sender;
-            dragSource = parent;
-            object data = GetDataFromListBox(dragSource, e.GetPosition(parent));
- 
-            if (data != null)
-            {
-                DragDrop.DoDragDrop(parent, data, DragDropEffects.Move);
-            }
+            _dragFlag = true;
+            _point = Mouse.GetPosition(this);
+            //ListBox parent = (ListBox) sender;
+            //dragSource = parent;
+            //DragDrop.DoDragDrop(parent, parent.SelectedItem, DragDropEffects.Move);
         }
-#region GetDataFromListBox(ListBox,Point)
-        private static object GetDataFromListBox(ListBox source, Point point)
-        {
-            UIElement element = source.InputHitTest(point) as UIElement;
-            if (element != null)
-            {
-                object data = DependencyProperty.UnsetValue;
-                while (data == DependencyProperty.UnsetValue)
-                {
-                    data = source.ItemContainerGenerator.ItemFromContainer(element);
-                    if (data == DependencyProperty.UnsetValue)
-                    {
-                        element = VisualTreeHelper.GetParent(element) as UIElement;
-                    }
-                    if (element == source)
-                    {
-                        return null;
-                    }
-                }
-                if (data != DependencyProperty.UnsetValue)
-                {
-                    return data;
-                }
-            }
-            return null;
-        }
-        
-#endregion
 
-private void ListBox_Drop(object sender, DragEventArgs e)
+        private void ListBox_Drop(object sender, DragEventArgs e)
         {
-            ListBox parent = (ListBox)sender;
-            object data = e.Data.GetData(typeof(string));
-            ((IList)dragSource.ItemsSource).Remove(data);
+            string typ = e.Data.GetType().ToString();
+            ListBox parent = (ListBox) sender;
+            object data = e.Data.GetData(typeof (ListBoxItem));
+            //((IList)dragSource.ItemsSource).Remove(data);
             parent.Items.Add(data);
+            _dragFlag = false;
+            _point = new Point(0,0);
+        }
+
+        private void UIElement_OnMouseMove(object sender, MouseEventArgs e)
+        {
+            Point test = Mouse.GetPosition(this);
+            if (_dragFlag)
+            {
+                if ((test.X + test.Y)+10 > (_point.X + _point.Y))
+                {
+                    DragDrop.DoDragDrop(ListBox1, ListBox1.SelectedItem, DragDropEffects.Move);
+                }
+            }
+        }
+
+        private void UIElement_OnMouseUp(object sender, MouseButtonEventArgs e)
+        {
+            _dragFlag = false;
+            _point = new Point(0,0);
         }
     }
+
+
 }

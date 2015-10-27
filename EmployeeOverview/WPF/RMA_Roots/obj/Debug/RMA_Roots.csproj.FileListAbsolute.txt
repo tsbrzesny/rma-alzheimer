@@ -22,8 +22,6 @@ U:\WPF\RMA_Roots\bin\Debug\RMA_Roots.dll.config
 P:\User\Timo\WPF\RMA_Roots\obj\Debug\RMA_Roots.csprojResolveAssemblyReference.cache
 P:\User\Timo\WPF\RMA_Roots\obj\Debug\RMA_Roots.dll
 \\192.168.10.5\Produktion\User\Timo\WPF\RMA_Roots\obj\Debug\RMA_Roots.csprojResolveAssemblyReference.cache
-D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\obj\Debug\RMA_Roots.csprojResolveAssemblyReference.cache
-D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\obj\Debug\RMA_Roots.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\Mono.Security.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\Npgsql.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\RMA_Roots.dll.config
@@ -33,12 +31,7 @@ D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\Newtonsoft.Json.
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\WPF_Roots.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\Technewlogic.WpfDialogManagement.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\WPF_Roots.pdb
-D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\Common.Logging.pdb
-D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\Common.Logging.xml
-D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\Common.Logging.Core.pdb
-D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\Common.Logging.Core.xml
-D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\Common.Logging.Log4Net1211.pdb
-D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\Common.Logging.Log4Net1211.xml
-D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\log4net.xml
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\bin\Debug\Technewlogic.WpfDialogManagement.pdb
+D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\obj\Debug\RMA_Roots.csprojResolveAssemblyReference.cache
+D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\obj\Debug\RMA_Roots.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\RMA_Roots\obj\Debug\RMA_Roots.pdb

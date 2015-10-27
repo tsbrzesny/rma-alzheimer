@@ -6,7 +6,7 @@
         Title="Alzheimer Tool" Height="370" Width="890"
         ResizeMode="NoResize">
 
-    <Grid>
+    <Grid MouseMove="UIElement_OnMouseMove" MouseUp="UIElement_OnMouseUp">
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30" />
@@ -29,9 +29,9 @@
 
         
         <Label Content="Run My Accounts Mitarbeiter :" Grid.Column="2" Grid.Row="1" />
-        <ListBox Name="ListBox" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Column="2" Grid.Row="2" 
+        <ListBox Name="ListBox1" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Column="2" Grid.Row="2" 
                  ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee}" AllowDrop="True" 
-                 PreviewMouseLeftButtonDown="ListBox_PreviewMouseLeftButtonDown">
+                 PreviewMouseDown="ListBox_OnMouseDown">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">

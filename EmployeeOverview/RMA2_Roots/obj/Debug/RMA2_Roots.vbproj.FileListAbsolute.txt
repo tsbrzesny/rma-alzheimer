@@ -81,11 +81,7 @@ D:\Repos\rma-alzheimer\EmployeeOverview\RMA2_Roots\bin\Debug\Common.Logging.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\RMA2_Roots\bin\Debug\Technewlogic.WpfDialogManagement.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\RMA2_Roots\bin\Debug\RMA_Roots.pdb
 D:\Repos\rma-alzheimer\EmployeeOverview\RMA2_Roots\bin\Debug\WPF_Roots.pdb
-D:\Repos\rma-alzheimer\EmployeeOverview\RMA2_Roots\bin\Debug\Common.Logging.Core.pdb
-D:\Repos\rma-alzheimer\EmployeeOverview\RMA2_Roots\bin\Debug\Common.Logging.Core.xml
 D:\Repos\rma-alzheimer\EmployeeOverview\RMA2_Roots\bin\Debug\Newtonsoft.Json.xml
-D:\Repos\rma-alzheimer\EmployeeOverview\RMA2_Roots\bin\Debug\Common.Logging.pdb
-D:\Repos\rma-alzheimer\EmployeeOverview\RMA2_Roots\bin\Debug\Common.Logging.xml
 D:\Repos\rma-alzheimer\EmployeeOverview\RMA2_Roots\bin\Debug\Technewlogic.WpfDialogManagement.pdb
 D:\Repos\rma-alzheimer\EmployeeOverview\RMA2_Roots\obj\Debug\RMA2_Roots.vbprojResolveAssemblyReference.cache
 D:\Repos\rma-alzheimer\EmployeeOverview\RMA2_Roots\obj\Debug\RMA2_Roots.Resources.resources

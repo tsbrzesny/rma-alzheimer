@@ -111,7 +111,6 @@ D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\bin\Debug\WPF_Roots.pdb
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\bin\Debug\Newtonsoft.Json.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\bin\Debug\Technewlogic.WpfDialogManagement.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\bin\Debug\Technewlogic.WpfDialogManagement.pdb
-D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\obj\Debug\WPF_Roots.csprojResolveAssemblyReference.cache
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\obj\Debug\ComboWithCheckboxes.baml
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\obj\Debug\MsgBox.baml
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\obj\Debug\PromptBox.baml

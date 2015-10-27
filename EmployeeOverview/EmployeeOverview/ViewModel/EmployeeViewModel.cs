@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows.Media;
@@ -78,7 +77,7 @@ namespace Alzheimer.ViewModel
                 EmployeeModel eModel = AutoCompleteName(value);
                 if (eModel != null)
                 {
-                    Findings = eModel.FullName;
+                    Findings = eModel.FullName + " " + eModel.ContactId;
                     EmployeeImage = eModel.Image;
                 }
                 else
