@@ -100,7 +100,6 @@ D:\Repos\rma-alzheimer\EmployeeOverview\EmployeeOverview\obj\Debug\Alzheimer.csp
 D:\Repos\rma-alzheimer\EmployeeOverview\EmployeeOverview\obj\Debug\MainWindow.g.cs
 D:\Repos\rma-alzheimer\EmployeeOverview\EmployeeOverview\obj\Debug\App.g.cs
 D:\Repos\rma-alzheimer\EmployeeOverview\EmployeeOverview\obj\Debug\EmployeeOverview_MarkupCompile.cache
-D:\Repos\rma-alzheimer\EmployeeOverview\EmployeeOverview\obj\Debug\EmployeeOverview_MarkupCompile.lref
 D:\Repos\rma-alzheimer\EmployeeOverview\EmployeeOverview\bin\Debug\Mono.Security.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\EmployeeOverview\bin\Debug\Npgsql.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\EmployeeOverview\bin\Debug\EmployeeOverview.ini

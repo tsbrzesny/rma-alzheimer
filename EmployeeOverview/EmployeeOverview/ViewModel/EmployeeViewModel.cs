@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
 using System.Windows.Media;
 using Alzheimer.Model;
 
@@ -25,6 +27,7 @@ namespace Alzheimer.ViewModel
         {
             var import = new Import();
             _employees = import.Employees;
+            _employees = _employees.OrderBy(f => f.Vorname).ToList();
         }
 
 
