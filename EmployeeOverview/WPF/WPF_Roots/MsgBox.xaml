@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="WPF_Roots.MsgBox"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="274" d:DesignWidth="573">
+
+    <DockPanel Background="WhiteSmoke">
+        <TextBlock Name="tb_title" DockPanel.Dock="Top" FontSize="16" Padding="5,5,5,5" Background="#FFFB4F4F" Foreground="White">
+            Title
+        </TextBlock>
+        <DockPanel>
+            <Image Name="i_icon" DockPanel.Dock="Left" Height="70" Width="70" Margin="0,15,20,0" VerticalAlignment="Top"></Image>
+            <StackPanel>
+                <TextBlock Name="tb_msg" Margin="0,15,15,0">Message</TextBlock>
+                <ContentControl Name="cc_msg" Margin="0,15,15,0"/>
+                <TextBlock Name="tb_msg2" Margin="0,15,15,0">Message2</TextBlock>
+            </StackPanel>
+        </DockPanel>
+    </DockPanel>
+</UserControl>

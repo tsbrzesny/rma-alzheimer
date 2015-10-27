@@ -1,0 +1,71 @@
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\bin\Debug\Technewlogic.WpfDialogManagement.dll
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\bin\Debug\Technewlogic.WpfDialogManagement.pdb
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\WpfDialogManagement.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\DialogBaseControl.baml
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\DialogContentStyle.baml
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\WaitAnimation.baml
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\DialogBaseControl.g.cs
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\WaitAnimation.g.cs
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\WaitProgressDialogControl.g.cs
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement_MarkupCompile.cache
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement_MarkupCompile.lref
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\WaitProgressDialogControl.baml
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.g.resources
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.Properties.Resources.resources
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\WpfDialogManagement.csproj.GenerateResource.Cache
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.dll
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WpfDialogs\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.pdb
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\bin\Debug\Technewlogic.WpfDialogManagement.dll
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\bin\Debug\Technewlogic.WpfDialogManagement.pdb
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\DialogBaseControl.baml
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\DialogContentStyle.baml
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\WaitAnimation.baml
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\DialogBaseControl.g.cs
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\WaitAnimation.g.cs
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\WaitProgressDialogControl.g.cs
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement_MarkupCompile.cache
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement_MarkupCompile.lref
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\WaitProgressDialogControl.baml
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.g.resources
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.Properties.Resources.resources
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\WpfDialogManagement.csproj.GenerateResource.Cache
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.dll
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\MsgBox\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.pdb
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\bin\Debug\Technewlogic.WpfDialogManagement.dll
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\bin\Debug\Technewlogic.WpfDialogManagement.pdb
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\WpfDialogManagement.csprojResolveAssemblyReference.cache
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\DialogBaseControl.baml
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\DialogContentStyle.baml
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\WaitAnimation.baml
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\DialogBaseControl.g.cs
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\WaitAnimation.g.cs
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\WaitProgressDialogControl.g.cs
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement_MarkupCompile.cache
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement_MarkupCompile.lref
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\WaitProgressDialogControl.baml
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.g.resources
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.Properties.Resources.resources
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\WpfDialogManagement.csproj.GenerateResource.Cache
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.dll
+C:\Users\Benjamin Koch\Documents\Visual Studio 2013\Projects\WPF_Roots\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.pdb
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\bin\Debug\Technewlogic.WpfDialogManagement.dll
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\bin\Debug\Technewlogic.WpfDialogManagement.pdb
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\WpfDialogManagement.csprojResolveAssemblyReference.cache
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\DialogBaseControl.baml
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\DialogContentStyle.baml
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\WaitAnimation.baml
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\DialogBaseControl.g.cs
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\WaitAnimation.g.cs
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\WaitProgressDialogControl.g.cs
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement_MarkupCompile.cache
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement_MarkupCompile.lref
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\WaitProgressDialogControl.baml
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.g.resources
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.Properties.Resources.resources
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\WpfDialogManagement.csproj.GenerateResource.Cache
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.dll
+P:\User\Beno\WPF\WPF_Roots\WpfDialogManagement\obj\Debug\Technewlogic.WpfDialogManagement.pdb

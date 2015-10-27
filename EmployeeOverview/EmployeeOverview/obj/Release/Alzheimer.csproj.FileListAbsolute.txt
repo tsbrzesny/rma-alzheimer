@@ -1,0 +1,15 @@
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\bin\Release\EmployeeOverview.exe.config
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\bin\Release\EmployeeOverview.exe
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\bin\Release\EmployeeOverview.pdb
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\bin\Release\nunit.framework.dll
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\bin\Release\nunit.framework.xml
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Release\MainWindow.g.cs
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Release\App.g.cs
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Release\EmployeeOverview_MarkupCompile.cache
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Release\EmployeeOverview_MarkupCompile.lref
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Release\MainWindow.baml
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Release\EmployeeOverview.g.resources
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Release\Alzheimer.Properties.Resources.resources
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Release\Alzheimer.csproj.GenerateResource.Cache
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Release\EmployeeOverview.exe
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Release\EmployeeOverview.pdb

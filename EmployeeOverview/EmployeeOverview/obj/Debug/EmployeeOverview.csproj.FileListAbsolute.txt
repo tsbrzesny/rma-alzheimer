@@ -1,0 +1,13 @@
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\bin\Debug\EmployeeOverview.exe.config
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\bin\Debug\EmployeeOverview.exe
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\bin\Debug\EmployeeOverview.pdb
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Debug\EmployeeOverview.csprojResolveAssemblyReference.cache
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Debug\MainWindow.baml
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Debug\MainWindow.g.cs
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Debug\App.g.cs
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Debug\EmployeeOverview_MarkupCompile.cache
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Debug\EmployeeOverview.g.resources
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Debug\EmployeeOverview.Properties.Resources.resources
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Debug\EmployeeOverview.csproj.GenerateResource.Cache
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Debug\EmployeeOverview.exe
+C:\Users\tsbrzesny\Source\Repos\rma-testprojects\EmployeeOverview\EmployeeOverview\obj\Debug\EmployeeOverview.pdb
