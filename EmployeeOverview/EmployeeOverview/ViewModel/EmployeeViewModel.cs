@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.Remoting.Messaging;
 using System.Windows.Media;
-using System.Windows.Media.Converters;
 using Alzheimer.Model;
 
 namespace Alzheimer.ViewModel
@@ -19,7 +14,8 @@ namespace Alzheimer.ViewModel
         private string _searchTerm;
         private string _findings; 
         private ImageSource _employeeImage;
-        private List<ImageSource> _employeeImageSources; 
+        private EmployeeModel _selectedEmployee;
+        private IList<EmployeeModel> _favoriteEmployees; 
          
         /// <summary>
         /// Employee View Model Constructor. 
@@ -27,19 +23,14 @@ namespace Alzheimer.ViewModel
         /// </summary>
         public EmployeeViewModel()
         {
-            Import import = new Import();
+            var import = new Import();
             _employees = import.Employees;
-            _employeeImageSources = new List<ImageSource>();
-            foreach (var employee in _employees)
-            {
-                _employeeImageSources.Add(employee.Image);
-            }
         }
 
 
         public EmployeeModel AutoCompleteName(string partName)
         {
-            var searchHitList = new List<EmployeeModel>(){};
+            var searchHitList = new List<EmployeeModel>();
             foreach (var em in _employees)
             {
                 if (em.Zeichen.ToLower().Contains(partName.ToLower()))
@@ -73,15 +64,7 @@ namespace Alzheimer.ViewModel
             return null;
         }
 
-        public List<ImageSource> EmployeeImageSources
-        {
-            get { return _employeeImageSources; }
-            set
-            {
-                _employeeImageSources = value;
-                NotifyPropertyChanged("EmployeeImageSources");
-            }
-        }
+        
 
         public string SearchTerm
         {
@@ -101,6 +84,16 @@ namespace Alzheimer.ViewModel
                     EmployeeImage = null;
                 }
                 NotifyPropertyChanged("SearchTerm");
+            }
+        }
+
+        public EmployeeModel SelectedEmployee
+        {
+            get { return _selectedEmployee; }
+            set
+            {
+                _selectedEmployee = value;
+                SearchTerm = _selectedEmployee.FullName;
             }
         }
 
@@ -127,6 +120,17 @@ namespace Alzheimer.ViewModel
             }
         }
 
+        public IList<EmployeeModel> Employees
+        {
+            get { return _employees; }
+            set { _employees = value; }
+        }
+
+        public IList<EmployeeModel> FavoriteEmployees
+        {
+            get { return _favoriteEmployees; }
+            set { _favoriteEmployees = value; }
+        } 
 
         public event PropertyChangedEventHandler PropertyChanged;
 
