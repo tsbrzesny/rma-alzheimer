@@ -17,7 +17,7 @@ namespace Alzheimer.ViewModel
     {
         private IList<EmployeeModel> _employees;
         private string _searchTerm;
-        private string _findings;
+        private string _findings; 
         private ImageSource _employeeImage;
         private List<ImageSource> _employeeImageSources; 
          
