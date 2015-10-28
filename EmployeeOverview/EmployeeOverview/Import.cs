@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Xml;
 using Alzheimer.Model;
 using RMA2_Roots;
 
@@ -17,6 +19,29 @@ namespace Alzheimer
         public Import()
         {
             ImportDb();
+            ImportXML();
+        }
+
+        private void ImportXML()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load("d:\\Mitarbeiter.xml");
+            XmlNodeList nodes = doc.DocumentElement.SelectNodes("Mitarbeiter");
+            foreach (XmlNode node in nodes)
+            {
+                string myName = node.ChildNodes[0].InnerText;
+                string myX = node.ChildNodes[1].InnerText;
+                string myY = node.ChildNodes[2].InnerText;
+
+                for (int i = 0; i < _employees.Count; i++)
+                {
+                    if (_employees[i].FullName.Equals(myName))
+                    {
+                        _employees[i].PosX = Int32.Parse(myX);
+                        _employees[i].PosY = Int32.Parse(myY);
+                    }
+                }
+            }
         }
 
         private void ImportDb()
@@ -28,21 +53,6 @@ namespace Alzheimer
                 _employees.Add(eModel);
             }
         }
-
-
-        #region helper
-        /// <summary>
-        /// if string contains "''" replace it with ""
-        /// </summary>
-        /// <param name="text">text to check</param>
-        /// <returns>string without any "''"</returns>
-        private String ToStringEmpty(Object text)
-        {
-            return text.ToString().Equals("''") ? "" : text.ToString();
-        }
-        #endregion
-
-
 
         public List<EmployeeModel> Employees
         {

@@ -31,6 +31,7 @@ namespace Alzheimer
             _point = Mouse.GetPosition(this);
         }
 
+        //TODO move some of this methods into view model. Only keep the call here
         private void ListBox_Drop(object sender, DragEventArgs e)
         {
             string typ = e.Data.GetType().ToString();
@@ -68,6 +69,8 @@ namespace Alzheimer
         {
             ListBox2.Items.Add(ListBox1.SelectedItem);
         }
+
+
     }
 
 

@@ -1,7 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Windows;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using Alzheimer.Model;
 
 namespace Alzheimer.ViewModel
@@ -16,19 +19,24 @@ namespace Alzheimer.ViewModel
         private string _findings; 
         private ImageSource _employeeImage;
         private EmployeeModel _selectedEmployee;
-
+        private ImageSource _sitzplanSource;
+        private Visibility _showSeatingVisibility;
+        
+        
         /// <summary>
         /// Employee View Model Constructor. 
         /// Will load all employees from excel
         /// </summary>
         public EmployeeViewModel()
         {
+            _sitzplanSource = new BitmapImage(new Uri(@"D:\sitzplan.png"));
             var import = new Import();
             _employees = import.Employees;
             _employees = _employees.OrderBy(f => f.Vorname).ToList();
+            _showSeatingVisibility = Visibility.Hidden;
         }
 
-
+        //TODO change this into something WAY BETTER!!
         public EmployeeModel AutoCompleteName(string partName)
         {
             var searchHitList = new List<EmployeeModel>();
@@ -65,7 +73,22 @@ namespace Alzheimer.ViewModel
             return null;
         }
 
-        
+
+
+        public Visibility ShowSeatingVisibility
+        {
+            get { return _showSeatingVisibility; }
+            set
+            {
+                _showSeatingVisibility = value;
+                NotifyPropertyChanged("ShowSeatingVisibility");
+            }
+        }
+
+        public ImageSource SitzplanSource
+        {
+            get { return _sitzplanSource;}
+        }
 
         public string SearchTerm
         {
@@ -83,20 +106,25 @@ namespace Alzheimer.ViewModel
                 {
                     Findings = "";
                     EmployeeImage = null;
+                    ShowSeatingVisibility = Visibility.Hidden;
                 }
                 NotifyPropertyChanged("SearchTerm");
             }
         }
 
-        
 
         public EmployeeModel SelectedEmployee
         {
             get { return _selectedEmployee; }
             set
             {
-                _selectedEmployee = value;
-                SearchTerm = _selectedEmployee.FullName;
+                if (value != null)
+                {
+                    _selectedEmployee = value;
+                    SearchTerm = _selectedEmployee.FullName;
+                    ShowSeatingVisibility = Visibility.Visible;
+                    NotifyPropertyChanged("SelectedEmployee");
+                }
             }
         }
 

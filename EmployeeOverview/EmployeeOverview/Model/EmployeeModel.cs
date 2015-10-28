@@ -13,10 +13,14 @@ namespace Alzheimer.Model
     {
 
         private RMA2D.RMAMitarbeiter _rmaMitarbeiter;
+        private int _posX;
+        private int _posY;
 
-        public EmployeeModel(RMA2D.RMAMitarbeiter mitarbeiter)
+        public EmployeeModel(RMA2D.RMAMitarbeiter mitarbeiter, int posX = 0, int posY = 0)
         {
             _rmaMitarbeiter = mitarbeiter;
+            _posX = posX;
+            _posY = posY;
         }
 
 
@@ -66,6 +70,18 @@ namespace Alzheimer.Model
                 logo.EndInit();
                 return logo; 
             }
+        }
+
+        public int PosX
+        {
+            get { return _posX; }
+            set { _posX = value; }
+        }
+
+        public int PosY
+        {
+            get { return _posY;}
+            set { _posY = value; }
         }
 
         public string FullName

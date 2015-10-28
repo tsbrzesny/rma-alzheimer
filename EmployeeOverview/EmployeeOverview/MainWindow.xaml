@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
-        Title="Alzheimer Tool" Height="370" Width="890"
+        Title="Alzheimer Tool" Height="770" Width="940"
         ResizeMode="NoResize">
 
     <Grid MouseMove="UIElement_OnMouseMove" MouseUp="UIElement_OnMouseUp">
@@ -11,10 +11,12 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="30" />
             <RowDefinition Height="270"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="100" />
-            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="350" />
             <ColumnDefinition Width="220"/>
             <ColumnDefinition Width="30"/>
             <ColumnDefinition Width="220"/>
@@ -47,7 +49,8 @@
 
         <Label Content="Lieblingsmitarbeiter :" Grid.Column="4" Grid.Row="1" />
         <ListBox Name="ListBox2" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Column="4" Grid.Row="2" 
-                 ItemsSource="{Binding FavoriteEmployees}" AllowDrop="True" Drop="ListBox_Drop">
+                 ItemsSource="{Binding FavoriteEmployees}" AllowDrop="True" Drop="ListBox_Drop" 
+                 MouseDoubleClick="RemoveFavorite" SelectedItem="{Binding SelectedEmployee}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -57,6 +60,11 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+        <Canvas Grid.Column="1" Grid.Row="4"  Grid.ColumnSpan="3" MaxWidth="800" MaxHeight="350">
+            <Image Source="{Binding SitzplanSource}" MaxHeight="350" MaxWidth="800"/>
+            <Rectangle Canvas.Left="{Binding SelectedEmployee.PosX}" Canvas.Top="{Binding SelectedEmployee.PosY}" Fill="Red" Opacity="0.75" Visibility="{Binding ShowSeatingVisibility}" 
+                       Width="20" Height="20"/>
+        </Canvas>
         
         
     </Grid>
