@@ -16,8 +16,7 @@ namespace Alzheimer.ViewModel
         private string _findings; 
         private ImageSource _employeeImage;
         private EmployeeModel _selectedEmployee;
-        private IList<EmployeeModel> _favoriteEmployees; 
-         
+
         /// <summary>
         /// Employee View Model Constructor. 
         /// Will load all employees from excel
@@ -77,7 +76,7 @@ namespace Alzheimer.ViewModel
                 EmployeeModel eModel = AutoCompleteName(value);
                 if (eModel != null)
                 {
-                    Findings = eModel.FullName + " " + eModel.ContactId;
+                    Findings = eModel.FullName + ", " + eModel.Email;
                     EmployeeImage = eModel.Image;
                 }
                 else
@@ -88,6 +87,8 @@ namespace Alzheimer.ViewModel
                 NotifyPropertyChanged("SearchTerm");
             }
         }
+
+        
 
         public EmployeeModel SelectedEmployee
         {
@@ -128,11 +129,7 @@ namespace Alzheimer.ViewModel
             set { _employees = value; }
         }
 
-        public IList<EmployeeModel> FavoriteEmployees
-        {
-            get { return _favoriteEmployees; }
-            set { _favoriteEmployees = value; }
-        } 
+        public IList<EmployeeModel> FavoriteEmployees { get; set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

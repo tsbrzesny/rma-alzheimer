@@ -26,12 +26,15 @@
         <Label Content="Name:" Grid.Column="0" Grid.Row="1" />
         <Label Grid.Column="1" Grid.Row="1" Content="{Binding Findings}" />
         <Image Grid.Column="1" Grid.Row="2" Source="{Binding EmployeeImage}" Width="300" Height="265"/>
-
+        <Button Grid.Column="4" Grid.Row="0" Width="100" Content="Entfernen" 
+                HorizontalAlignment="Right" Click="RemoveFavorite"/>
+        <Button Grid.Column="4" Grid.Row="0" Width="100" Content="Hinzufuegen" HorizontalAlignment="Left" 
+                Click="AddFavorite"/>
         
         <Label Content="Run My Accounts Mitarbeiter :" Grid.Column="2" Grid.Row="1" />
         <ListBox Name="ListBox1" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Column="2" Grid.Row="2" 
                  ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee}" AllowDrop="True" 
-                 PreviewMouseDown="ListBox_OnMouseDown">
+                 PreviewMouseDown="ListBox_OnMouseDown" MouseDoubleClick="AddFavorite">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
