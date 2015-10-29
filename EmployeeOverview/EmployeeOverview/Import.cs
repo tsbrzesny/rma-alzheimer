@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Xml;
 using Alzheimer.Model;
 using RMA2_Roots;
@@ -26,19 +25,22 @@ namespace Alzheimer
         {
             XmlDocument doc = new XmlDocument();
             doc.Load("d:\\Mitarbeiter.xml");
-            XmlNodeList nodes = doc.DocumentElement.SelectNodes("Mitarbeiter");
-            foreach (XmlNode node in nodes)
+            if (doc.DocumentElement != null)
             {
-                string myName = node.ChildNodes[0].InnerText;
-                string myX = node.ChildNodes[1].InnerText;
-                string myY = node.ChildNodes[2].InnerText;
-
-                for (int i = 0; i < _employees.Count; i++)
+                XmlNodeList nodes = doc.DocumentElement.SelectNodes("Mitarbeiter");
+                foreach (XmlNode node in nodes)
                 {
-                    if (_employees[i].FullName.Equals(myName))
+                    var myName = node.ChildNodes[0].InnerText;
+                    var myX = node.ChildNodes[1].InnerText;
+                    var myY = node.ChildNodes[2].InnerText;
+
+                    for (int i = 0; i < _employees.Count; i++)
                     {
-                        _employees[i].PosX = Int32.Parse(myX);
-                        _employees[i].PosY = Int32.Parse(myY);
+                        if (_employees[i].FullName.Equals(myName))
+                        {
+                            _employees[i].PosX = Int32.Parse(myX);
+                            _employees[i].PosY = Int32.Parse(myY);
+                        }
                     }
                 }
             }
@@ -47,9 +49,9 @@ namespace Alzheimer
         private void ImportDb()
         {
             _employees = new List<EmployeeModel>();
-            foreach (RMA2D.RMAMitarbeiter ma in RMA2D.mitarbeiterT)
+            foreach (var ma in RMA2D.mitarbeiterT)
             {
-                EmployeeModel eModel = new EmployeeModel(ma);
+                var eModel = new EmployeeModel(ma);
                 _employees.Add(eModel);
             }
         }

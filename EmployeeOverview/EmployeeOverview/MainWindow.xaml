@@ -6,7 +6,7 @@
         xmlns:viewModel="clr-namespace:Alzheimer.ViewModel"
         xmlns:dragDrop="clr-namespace:GongSolutions.Wpf.DragDrop;assembly=GongSolutions.Wpf.DragDrop"
         Title="Alzheimer Tool" Height="770" Width="940"
-        ResizeMode="CanResize">
+        ResizeMode="NoResize">
 
     <Window.DataContext>
         <viewModel:EmployeeViewModel />
@@ -33,12 +33,12 @@
         <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding SearchTerm, UpdateSourceTrigger=PropertyChanged, 
             Mode=OneWayToSource}"/>
         <Label Content="Name:" Grid.Column="0" Grid.Row="1" />
-        <Label Grid.Column="1" Grid.Row="1" Content="{Binding Findings}" />
-        <Image Grid.Column="1" Grid.Row="2" Source="{Binding EmployeeImage}" Width="300" Height="265"/>
+        <Label Grid.Column="1" Grid.Row="1" Content="{Binding Findings.FullName}" />
+        <Image Grid.Column="1" Grid.Row="2" Source="{Binding Findings.Image}" Width="300" Height="265"/>
         
         <Label Content="Run My Accounts Mitarbeiter :" Grid.Column="2" Grid.Row="1" />
         <ListBox x:Name="DragList" Grid.Column="2" Grid.Row="2" 
-                 ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee}"
+                 ItemsSource="{Binding Employees}" SelectedItem="{Binding Findings}"
                  dragDrop:DragDrop.IsDragSource="True">
             <ListBox.ItemTemplate>
                 <DataTemplate>
@@ -51,9 +51,9 @@
         </ListBox>
 
         <Label Content="Lieblingsmitarbeiter :" Grid.Column="4" Grid.Row="1" />
-        <ListBox x:Name="DropList" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Column="4" Grid.Row="2" 
+        <ListBox x:Name="DropList" Grid.Column="4" Grid.Row="2" 
                  ItemsSource="{Binding FavoriteEmployees}" AllowDrop="True"  
-                 SelectedItem="{Binding SelectedEmployee}" dragDrop:DragDrop.IsDropTarget="True">
+                 SelectedItem="{Binding Findings}" dragDrop:DragDrop.IsDropTarget="True">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -66,7 +66,7 @@
         
         <Canvas Grid.Column="1" Grid.Row="4"  Grid.ColumnSpan="3" MaxWidth="800" MaxHeight="350">
             <Image Source="{Binding SitzplanSource}" MaxHeight="350" MaxWidth="800"/>
-            <Rectangle Canvas.Left="{Binding SelectedEmployee.PosX}" Canvas.Top="{Binding SelectedEmployee.PosY}" 
+            <Rectangle Canvas.Left="{Binding Findings.PosX}" Canvas.Top="{Binding Findings.PosY}" 
                        Fill="Red" Opacity="0.75" Visibility="{Binding ShowSeatingVisibility}" 
                        Width="20" Height="20"/>
         </Canvas>

@@ -16,8 +16,6 @@ namespace Alzheimer
         public MainWindow()
         {
             InitializeComponent();
-            
-            //DataContext = new EmployeeViewModel();
         }
     }
 }

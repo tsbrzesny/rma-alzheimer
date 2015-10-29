@@ -16,9 +16,7 @@ namespace Alzheimer.ViewModel
     {
         private IList<EmployeeModel> _employees;
         private string _searchTerm;
-        private string _findings; 
-        private ImageSource _employeeImage;
-        private EmployeeModel _selectedEmployee;
+        private EmployeeModel _findings; 
         private readonly ImageSource _sitzplanSource;
         private Visibility _showSeatingVisibility;
         
@@ -108,13 +106,13 @@ namespace Alzheimer.ViewModel
                 EmployeeModel eModel = AutoCompleteName(value);
                 if (eModel != null)
                 {
-                    Findings = eModel.FullName + ", " + eModel.Email;
-                    EmployeeImage = eModel.Image;
+                    Findings = eModel;
+                    //EmployeeImage = eModel.Image;
                 }
                 else
                 {
-                    Findings = "";
-                    EmployeeImage = null;
+                    Findings = null;
+                    //EmployeeImage = null;
                     ShowSeatingVisibility = Visibility.Hidden;
                 }
                 NotifyPropertyChanged("SearchTerm");
@@ -122,49 +120,19 @@ namespace Alzheimer.ViewModel
         }
 
         /// <summary>
-        /// Currently selected employee
-        /// </summary>
-        public EmployeeModel SelectedEmployee
-        {
-            get { return _selectedEmployee; }
-            set
-            {
-                if (value != null)
-                {
-                    _selectedEmployee = value;
-                    SearchTerm = _selectedEmployee.FullName;
-                    ShowSeatingVisibility = Visibility.Visible;
-                    NotifyPropertyChanged("SelectedEmployee");
-                }
-            }
-        }
-
-        /// <summary>
         /// Results of the search
         /// </summary>
-        public string Findings
+        public EmployeeModel Findings
         {
             get { return _findings; }
             set
             {
                 _findings = value;
+                if (value != null)
+                {
+                    ShowSeatingVisibility = Visibility.Visible;
+                }
                 NotifyPropertyChanged("Findings");
-            }
-        }
-
-        /// <summary>
-        /// Image of the employee
-        /// </summary>
-        public ImageSource EmployeeImage
-        {
-            get
-            {
-                return _employeeImage;
-            }
-            set
-            {
-                _employeeImage = value;
-                NotifyPropertyChanged("EmployeeImage");
             }
         }
 
@@ -181,6 +149,10 @@ namespace Alzheimer.ViewModel
 
         public event PropertyChangedEventHandler PropertyChanged;
 
+        /// <summary>
+        /// Notifiy when a property changed so the view is updating its bindings
+        /// </summary>
+        /// <param name="propertyName">Name of the Property that needs an update</param>
         private void NotifyPropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)

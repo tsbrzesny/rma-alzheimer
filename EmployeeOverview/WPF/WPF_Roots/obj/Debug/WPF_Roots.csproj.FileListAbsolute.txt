@@ -123,3 +123,4 @@ D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\obj\Debug\WPF_Roots.Proper
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\obj\Debug\WPF_Roots.csproj.GenerateResource.Cache
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\obj\Debug\WPF_Roots.dll
 D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\obj\Debug\WPF_Roots.pdb
+D:\Repos\rma-alzheimer\EmployeeOverview\WPF\WPF_Roots\obj\Debug\WPF_Roots.csprojResolveAssemblyReference.cache
