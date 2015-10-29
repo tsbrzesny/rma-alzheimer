@@ -29,6 +29,7 @@ namespace Alzheimer.ViewModel
         /// </summary>
         public EmployeeViewModel()
         {
+            RMA_Roots.AppConfig.LoadAppConfiguration("EmployeeOverview");
             _sitzplanSource = new BitmapImage(new Uri(@"D:\sitzplan.png"));
             var import = new Import();
             _employees = import.Employees;
@@ -37,7 +38,7 @@ namespace Alzheimer.ViewModel
         }
 
         //TODO change this into something a little more appealing
-        public EmployeeModel AutoCompleteName(string partName)
+        private EmployeeModel AutoCompleteName(string partName)
         {
             var searchHitList = new List<EmployeeModel>();
             

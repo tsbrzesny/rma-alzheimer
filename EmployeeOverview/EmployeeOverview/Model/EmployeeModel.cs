@@ -12,7 +12,7 @@ namespace Alzheimer.Model
     public class EmployeeModel
     {
 
-        private RMA2D.RMAMitarbeiter _rmaMitarbeiter;
+        private readonly RMA2D.RMAMitarbeiter _rmaMitarbeiter;
         private int _posX;
         private int _posY;
 

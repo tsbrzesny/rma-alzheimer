@@ -3,14 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+        xmlns:viewModel="clr-namespace:Alzheimer.ViewModel"
+        xmlns:dragDrop="clr-namespace:GongSolutions.Wpf.DragDrop;assembly=GongSolutions.Wpf.DragDrop"
         Title="Alzheimer Tool" Height="770" Width="940"
         ResizeMode="CanResize">
 
-    <Grid MouseMove="UIElement_OnMouseMove">
+    <Window.DataContext>
+        <viewModel:EmployeeViewModel />
+    </Window.DataContext>
+    
+    
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30" />
-            <RowDefinition Height="270"/>
+            <RowDefinition Height="270" />
             <RowDefinition Height="30"/>
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
@@ -30,9 +37,9 @@
         <Image Grid.Column="1" Grid.Row="2" Source="{Binding EmployeeImage}" Width="300" Height="265"/>
         
         <Label Content="Run My Accounts Mitarbeiter :" Grid.Column="2" Grid.Row="1" />
-        <ListBox Name="ListBox1" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Column="2" Grid.Row="2" 
-                 ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee}" AllowDrop="False" 
-                 PreviewMouseDown="ListBox_OnMouseDown">
+        <ListBox x:Name="DragList" Grid.Column="2" Grid.Row="2" 
+                 ItemsSource="{Binding Employees}" SelectedItem="{Binding SelectedEmployee}"
+                 dragDrop:DragDrop.IsDragSource="True">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -44,9 +51,9 @@
         </ListBox>
 
         <Label Content="Lieblingsmitarbeiter :" Grid.Column="4" Grid.Row="1" />
-        <ListBox Name="ListBox2" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Column="4" Grid.Row="2" 
-                 ItemsSource="{Binding FavoriteEmployees}" AllowDrop="True" Drop="ListBox_Drop" 
-                 SelectedItem="{Binding SelectedEmployee}" MouseDoubleClick="ListBox2_OnMouseDoubleClick">
+        <ListBox x:Name="DropList" ScrollViewer.VerticalScrollBarVisibility="Visible" Grid.Column="4" Grid.Row="2" 
+                 ItemsSource="{Binding FavoriteEmployees}" AllowDrop="True"  
+                 SelectedItem="{Binding SelectedEmployee}" dragDrop:DragDrop.IsDropTarget="True">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">

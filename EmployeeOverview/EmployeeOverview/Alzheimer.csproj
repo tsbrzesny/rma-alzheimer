@@ -133,8 +133,6 @@
     </ApplicationDefinition>
     <Compile Include="Import.cs" />
     <Compile Include="Model\EmployeeModel.cs" />
-    <Compile Include="NUnit\NEmployeeModel.cs" />
-    <Compile Include="NUnit\NImport.cs" />
     <Compile Include="ViewModel\EmployeeViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -184,6 +182,10 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GongSolutions.Wpf.DragDrop\GongSolutions.Wpf.DragDrop.csproj">
+      <Project>{0c6674cc-6d49-414a-9b41-d4e175028ffb}</Project>
+      <Name>GongSolutions.Wpf.DragDrop</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RMA2_Roots\RMA2_Roots.vbproj">
       <Project>{c6cbaffa-f0b6-4b4c-a971-1d28597bb917}</Project>
       <Name>RMA2_Roots</Name>
