@@ -19,7 +19,7 @@ namespace Alzheimer.ViewModel
         private string _findings; 
         private ImageSource _employeeImage;
         private EmployeeModel _selectedEmployee;
-        private ImageSource _sitzplanSource;
+        private readonly ImageSource _sitzplanSource;
         private Visibility _showSeatingVisibility;
         
         
@@ -36,10 +36,12 @@ namespace Alzheimer.ViewModel
             _showSeatingVisibility = Visibility.Hidden;
         }
 
-        //TODO change this into something WAY BETTER!!
+        //TODO change this into something a little more appealing
         public EmployeeModel AutoCompleteName(string partName)
         {
             var searchHitList = new List<EmployeeModel>();
+            
+            //search through all employees.zeichen and try to find the match with the partName
             foreach (var em in _employees)
             {
                 if (em.Zeichen.ToLower().Contains(partName.ToLower()))
@@ -47,24 +49,21 @@ namespace Alzheimer.ViewModel
                     searchHitList.Add(em);
                 }
             }
+            
+            //Zeichen of employee was found. Return found employee
             if (searchHitList.Count == 1)
-            {
                 return searchHitList[0];
-            }
-            if (searchHitList.Count > 1)
+            
+            //Meaning none Employee was unique identified to this point, so searching for name / prename
+            foreach (var em in _employees)
             {
-                return null;
-            }
-            if (searchHitList.Count == 0)
-            {
-                foreach (var em in _employees)
+                if (em.FullName.ToLower().Contains(partName.ToLower()))
                 {
-                    if (em.FullName.ToLower().Contains(partName.ToLower()))
-                    {
-                        searchHitList.Add(em);
-                    }
+                    searchHitList.Add(em);
                 }
             }
+            
+            //If just one was found -> display the found one. Otherwise return null
             if (searchHitList.Count == 1)
             {
                 return searchHitList[0];
@@ -74,7 +73,10 @@ namespace Alzheimer.ViewModel
         }
 
 
-
+        /// <summary>
+        /// Visibility of the seating.
+        /// should only be visible when an employee is displayed
+        /// </summary>
         public Visibility ShowSeatingVisibility
         {
             get { return _showSeatingVisibility; }
@@ -85,11 +87,17 @@ namespace Alzheimer.ViewModel
             }
         }
 
+        /// <summary>
+        /// Picture of the Sitzplan
+        /// </summary>
         public ImageSource SitzplanSource
         {
             get { return _sitzplanSource;}
         }
 
+        /// <summary>
+        /// Searchterm
+        /// </summary>
         public string SearchTerm
         {
             get { return _searchTerm; }
@@ -112,7 +120,9 @@ namespace Alzheimer.ViewModel
             }
         }
 
-
+        /// <summary>
+        /// Currently selected employee
+        /// </summary>
         public EmployeeModel SelectedEmployee
         {
             get { return _selectedEmployee; }
@@ -128,6 +138,9 @@ namespace Alzheimer.ViewModel
             }
         }
 
+        /// <summary>
+        /// Results of the search
+        /// </summary>
         public string Findings
         {
             get { return _findings; }
@@ -138,6 +151,9 @@ namespace Alzheimer.ViewModel
             }
         }
 
+        /// <summary>
+        /// Image of the employee
+        /// </summary>
         public ImageSource EmployeeImage
         {
             get
@@ -151,6 +167,9 @@ namespace Alzheimer.ViewModel
             }
         }
 
+        /// <summary>
+        /// List of all employee's
+        /// </summary>
         public IList<EmployeeModel> Employees
         {
             get { return _employees; }
