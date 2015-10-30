@@ -24,7 +24,6 @@ namespace Alzheimer.Model
         }
 
 
-
         #region Getter and Setter
         public int ContactId
         {

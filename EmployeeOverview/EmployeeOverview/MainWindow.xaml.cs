@@ -18,4 +18,4 @@ namespace Alzheimer
             InitializeComponent();
         }
     }
-}
+} 

@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
         xmlns:viewModel="clr-namespace:Alzheimer.ViewModel"
         xmlns:dragDrop="clr-namespace:GongSolutions.Wpf.DragDrop;assembly=GongSolutions.Wpf.DragDrop"
-        Title="Alzheimer Tool" Height="770" Width="940"
-        ResizeMode="NoResize">
+        Title="Alzheimer Tool" MinHeight="770" MinWidth="940"
+        ResizeMode="CanResize">
 
     <Window.DataContext>
         <viewModel:EmployeeViewModel />
@@ -15,18 +15,18 @@
     
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30" />
-            <RowDefinition Height="270" />
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="3*" MinHeight="30"/>
+            <RowDefinition Height="3*" MinHeight="30"/>
+            <RowDefinition Height="34*" MinHeight="270"/>
+            <RowDefinition Height="5*" MinHeight="30"/>
+            <RowDefinition Height="40*" MinHeight="270"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100" />
-            <ColumnDefinition Width="350" />
-            <ColumnDefinition Width="220"/>
-            <ColumnDefinition Width="30"/>
-            <ColumnDefinition Width="Auto" MinWidth="220"/>
+            <ColumnDefinition MinWidth="100"  Width="11*" />
+            <ColumnDefinition MinWidth="350" Width="38*" />
+            <ColumnDefinition MinWidth="220" Width="24*"/>
+            <ColumnDefinition MinWidth="30" Width="3*"/>
+            <ColumnDefinition Width="24*" MinWidth="220"/>
         </Grid.ColumnDefinitions>
 
         <Label Content="Suche Name:" Grid.Column="0" Grid.Row="0" />
@@ -64,7 +64,7 @@
             </ListBox.ItemTemplate>
         </ListBox>
         
-        <Canvas Grid.Column="1" Grid.Row="4"  Grid.ColumnSpan="3" MaxWidth="800" MaxHeight="350">
+        <Canvas Grid.Column="0" Grid.Row="4"  Grid.ColumnSpan="3" MaxWidth="800" MaxHeight="350">
             <Image Source="{Binding SitzplanSource}" MaxHeight="350" MaxWidth="800"/>
             <Rectangle Canvas.Left="{Binding Findings.PosX}" Canvas.Top="{Binding Findings.PosY}" 
                        Fill="Red" Opacity="0.75" Visibility="{Binding ShowSeatingVisibility}" 

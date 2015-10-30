@@ -59,7 +59,6 @@ namespace Alzheimer
         public List<EmployeeModel> Employees
         {
             get { return _employees; }
-            set { _employees = value; }
         }
     }
 }
